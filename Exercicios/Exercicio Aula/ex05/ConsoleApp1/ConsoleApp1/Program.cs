@@ -17,4 +17,13 @@ if(media >= 7.00)
 else
 {
     Console.WriteLine("Reprovado");
+
+    if (((media + 7.00) / 2) > 5.00)
+    {
+        Console.WriteLine("Aprovado");
+    }
+    else
+    {
+        Console.WriteLine("Reprovado");
+    }
 }
