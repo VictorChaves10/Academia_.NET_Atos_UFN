@@ -16,7 +16,7 @@ else if (n2 > n3)
 {
     Console.WriteLine($"O {n1} é o maior!");
 }
-else
+else if(n3 > n1 && n3 > n2)
 {
 
     Console.WriteLine($"O {n3} é o maior!");
