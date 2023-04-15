@@ -1,0 +1,15 @@
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\bin\Debug\net6.0\Ex10.exe
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\bin\Debug\net6.0\Ex10.deps.json
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\bin\Debug\net6.0\Ex10.runtimeconfig.json
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\bin\Debug\net6.0\Ex10.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\bin\Debug\net6.0\Ex10.pdb
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.csproj.AssemblyReference.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.AssemblyInfoInputs.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.AssemblyInfo.cs
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.csproj.CoreCompileInputs.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\refint\Ex10.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.pdb
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\Ex10.genruntimeconfig.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex10\Ex10\obj\Debug\net6.0\ref\Ex10.dll
