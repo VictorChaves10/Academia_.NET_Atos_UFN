@@ -1,0 +1,15 @@
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\bin\Debug\net6.0\Ex16.exe
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\bin\Debug\net6.0\Ex16.deps.json
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\bin\Debug\net6.0\Ex16.runtimeconfig.json
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\bin\Debug\net6.0\Ex16.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\bin\Debug\net6.0\Ex16.pdb
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.csproj.AssemblyReference.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.AssemblyInfoInputs.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.AssemblyInfo.cs
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.csproj.CoreCompileInputs.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\refint\Ex16.dll
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.pdb
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\Ex16.genruntimeconfig.cache
+C:\Users\dell 06\OneDrive\Documentos\Academia_.NET_Atos_UFN\Exercicios\ExerciciosVetores\Ex16\Ex16\obj\Debug\net6.0\ref\Ex16.dll
