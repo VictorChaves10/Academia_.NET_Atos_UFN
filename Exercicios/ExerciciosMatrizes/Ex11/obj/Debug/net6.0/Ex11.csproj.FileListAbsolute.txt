@@ -1,0 +1,15 @@
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\bin\Debug\net6.0\Ex11.exe
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\bin\Debug\net6.0\Ex11.deps.json
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\bin\Debug\net6.0\Ex11.runtimeconfig.json
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\bin\Debug\net6.0\Ex11.dll
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\bin\Debug\net6.0\Ex11.pdb
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.csproj.AssemblyReference.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.AssemblyInfoInputs.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.AssemblyInfo.cs
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.csproj.CoreCompileInputs.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.dll
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\refint\Ex11.dll
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.pdb
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\Ex11.genruntimeconfig.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosMatrizes\Ex11\obj\Debug\net6.0\ref\Ex11.dll
