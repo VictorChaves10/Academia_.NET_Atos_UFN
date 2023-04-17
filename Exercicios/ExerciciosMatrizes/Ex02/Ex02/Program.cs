@@ -10,27 +10,45 @@
 
 //		 Coluna 2: 36
 
-int[,] mat = new int[3,3];
 
-for(int i =0; i < 3;i++)
+
+
+using System.Globalization;
+
+int[,] mat = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
 {
-    for(int j = 0; j < 3; j++)
+    for (int j = 0; j < 3; j++)
     {
-        Console.Write($"Informe o valor da coluna {i+1} e linha {j+1}: ");
+        Console.Write($"Informe o valor da coluna {i + 1} e linha {j + 1}: ");
         mat[j, i] = int.Parse(Console.ReadLine());
-        
+
     }
     Console.WriteLine();
 }
 
-
-for(int i =0; i < 3; i++)
+for (int i = 0; i < 3; i++)
 {
     int temp = 0;
-    for(int j =1; j < 4; j++)
-    {       
+    for (int j = 0; j < 3; j++)
+    {
         int soma = mat[j, i] + temp;
         temp = soma;
     }
-    
+    Console.WriteLine($"A soma das linhas da coluna {i + 1} é : {temp}");
+
+}
+Console.WriteLine();
+    ;
+for (int i = 0; i < 3; i++)
+{
+    int temp = 0;
+    for (int j = 0; j < 3; j++)
+    {
+        int soma = mat[i,j] + temp;
+        temp = soma;
+    }
+    Console.WriteLine($"A soma das colunas da linha {i+1} é : {temp}");
+
 }
