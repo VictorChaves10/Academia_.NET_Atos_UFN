@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell 06\\OneDrive\\Área de Trabalho\\ConsoleApp1\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj": {}
+    "C:\\Users\\dell 06\\OneDrive\\Documentos\\Academia_.NET_Atos_UFN\\Exercicios\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell 06\\OneDrive\\Área de Trabalho\\ConsoleApp1\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj": {
+    "C:\\Users\\dell 06\\OneDrive\\Documentos\\Academia_.NET_Atos_UFN\\Exercicios\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell 06\\OneDrive\\Área de Trabalho\\ConsoleApp1\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj",
+        "projectUniqueName": "C:\\Users\\dell 06\\OneDrive\\Documentos\\Academia_.NET_Atos_UFN\\Exercicios\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj",
         "projectName": "DesafioJogoDaVelha",
-        "projectPath": "C:\\Users\\dell 06\\OneDrive\\Área de Trabalho\\ConsoleApp1\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj",
+        "projectPath": "C:\\Users\\dell 06\\OneDrive\\Documentos\\Academia_.NET_Atos_UFN\\Exercicios\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\DesafioJogoDaVelha.csproj",
         "packagesPath": "C:\\Users\\dell 06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell 06\\OneDrive\\Área de Trabalho\\ConsoleApp1\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\obj\\",
+        "outputPath": "C:\\Users\\dell 06\\OneDrive\\Documentos\\Academia_.NET_Atos_UFN\\Exercicios\\DesafioJogoDaVelha\\DesafioJogoDaVelha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
