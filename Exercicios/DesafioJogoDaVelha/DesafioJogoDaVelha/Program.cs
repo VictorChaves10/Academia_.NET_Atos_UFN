@@ -1,6 +1,8 @@
 ﻿
 
 
+using System.Security.Cryptography.X509Certificates;
+
 namespace JogoDaVelha
 {
     class Program
@@ -11,7 +13,7 @@ namespace JogoDaVelha
         static int player = 1;
         static int line = 0;
         static int column = 0;
-    
+
         static void Main(string[] args)
         {
 
@@ -31,7 +33,7 @@ namespace JogoDaVelha
 
                         Console.Write("\tInforme a linha desejada: ");
                         line = int.Parse(Console.ReadLine());
-                      
+
                         if (JogadaValida(column, line))
                         {
                             tabuleiro[line, column] = 'X';
@@ -42,7 +44,7 @@ namespace JogoDaVelha
                             Console.Clear();
                             Console.WriteLine(Tabuleiro());
                             Console.WriteLine("   \t(Jogada Inválida!)\n");
-                            
+
                         }
                     }
                 }
@@ -76,7 +78,18 @@ namespace JogoDaVelha
 
             } while (player > 0);
 
+            //if (Vencedor())
+            //{
+            //    if (player % 2 == 0)
+            //    {
+            //        player1Victory++;
+                    
+            //    }
+            //    else {
+            //        Console.WriteLine();
+            //    }
 
+            //}
         }
 
         public static string Tabuleiro()
@@ -95,8 +108,6 @@ namespace JogoDaVelha
                  + $"   2\t|   {tabuleiro[2, 0]}\t|   {tabuleiro[2, 1]}\t|   {tabuleiro[2, 2]}\t|\n"
                  + "\t|_______|_______|_______|\n";
         }
-
-
         public static bool JogadaValida(int column, int rowl)
         {
             if ((column <= 2 && column >= 0) && (rowl <= 2 && rowl >= 0))
@@ -115,7 +126,6 @@ namespace JogoDaVelha
                 return false;
             }
 
-
         }
 
     }
@@ -126,16 +136,16 @@ namespace JogoDaVelha
 for (int i = 0; i < 3; i++)
 {
      x = 0;
-     o = 0;
+     y = 0;
     for (int j = 0; j < 3; j++)
     {
-        if (tabuleiro[i, j] == player1)
+        if (tabuleiro[i, j] == 'X')
         {
             x++;
         }
-        else if (tabuleiro[i, j] == player2)
+        else if (tabuleiro[i, j] == 'O')
         {
-            o++;
+            y++;
         }
     }
 
@@ -178,28 +188,3 @@ for (int i = 0; i < 3; i++)
     }
 
 }
-
-// Condições de vitória
-
-static int Victory(int x)
-{
-    int player1 = 0;
-
-    int player2 = 0;
-
-    if (x == 3)
-    {
-        player1++;
-        return player1;
-    }
-    else if (y == 3)
-    {
-        player2++;
-        return player2;
-    }
-    else
-    {
-        return 0;
-    }
-}
-*/
