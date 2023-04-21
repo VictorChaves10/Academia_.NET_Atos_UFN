@@ -8,11 +8,15 @@ namespace JogoDaVelha
     class Program
     {
         static char[,] tabuleiro = new char[3, 3];
-        static int player1Victory = 0;
-        static int player2Victory = 0;
-        static int player = 1;
-        static int line = 0;
-        static int column = 0;
+
+        static int player1Victory = 0; // Placar de vitória 'X'
+        static int player2Victory = 0; // Placar de vitória 'O'
+        
+        static int player = 1;  // Acompanhar o jogador da vez
+
+        static int line, column; // Armaze a escolha do jogador
+
+        static int flag = 0; // Variável para indicar o status do jogo (0 para jogo em andamento, 1 para empate, 2 para vitória de um jogador)
 
         static void Main(string[] args)
         {
@@ -78,18 +82,19 @@ namespace JogoDaVelha
 
             } while (player > 0);
 
-            //if (Vencedor())
-            //{
-            //    if (player % 2 == 0)
-            //    {
-            //        player1Victory++;
-                    
-            //    }
-            //    else {
-            //        Console.WriteLine();
-            //    }
+            if (Vencedor())
+            {
+                if (player % 2 == 0)
+                {
+                    player1Victory++;
 
-            //}
+                }
+                else
+                {
+                    Console.WriteLine();
+                }
+
+            }
         }
 
         public static string Tabuleiro()
@@ -128,63 +133,68 @@ namespace JogoDaVelha
 
         }
 
-    }
-}
-
-/* verificando as linhas horizontais
-
-for (int i = 0; i < 3; i++)
-{
-     x = 0;
-     y = 0;
-    for (int j = 0; j < 3; j++)
-    {
-        if (tabuleiro[i, j] == 'X')
+        public static bool Vencedor()
         {
-            x++;
-        }
-        else if (tabuleiro[i, j] == 'O')
-        {
-            y++;
+            int x = 0;
+            int y = 0;
+
+            // Verifica as linhas horinzontais
+
+            for (int i = 0; i < 3; i++)
+            {
+                 x = 0;
+                 y = 0;
+
+                for (int j = 0; j < 3; j++)
+                {
+                    if (tabuleiro[i, j] == 'X')
+                    {
+                        x++;
+                    }
+                    else if (tabuleiro[i, j] == 'O')
+                    {
+                        y++;
+                    }
+                }
+
+            }
+
+            //Verifica as linhas verticais
+
+            for (int i = 0; i < 3; i++)
+            {
+                 x = 0;
+                 y = 0;
+
+                for (int j = 0; j < 3; j++)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        x++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        y++;
+                    }
+                }
+            }
+
+            //Verifica a diagonal principal
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (tabuleiro[i, i] == 'X')
+                if (tabuleiro[i, i] == 'X')
+                {
+                    x++;
+                }
+                else if (tabuleiro[i, i] == 'O')
+                {
+                    y++;
+
+                }
+            }
+
         }
     }
-
-}
-
-//verificando as linhas verticas
-
-for (int i = 0; i < 3; i++)
-{
-     x = 0;
-     o = 0;
-    for (int j = 0; j < 3; j++)
-    {
-        if (tabuleiro[j, i] == player1)
-        {
-            x++;
-        }
-        else if (tabuleiro[j, i] == player2)
-        {
-            o++;
-        }
-    }
-}
-
-//verificando a diagonal principal
-
-x = 0;
-o = 0;
-for (int i = 0; i < 3; i++)
-{ 
-
-    if (tabuleiro[i, i] == player1)
-    {
-        x++;
-    }
-    else if (tabuleiro[i, i] == player2)
-    {
-        o++;
-
-    }
-
 }
