@@ -137,7 +137,7 @@ namespace JogoDaVelha
         }
         public static string Tabuleiro()
         {
-            return "             JOGO DA VELHA\n\n"
+            return "\n             JOGO DA VELHA\n\n"
                  + $"  Player1 (X)  [ {player1Victory} ] x [ {player2Victory} ]  Player2 (O)  \tEmpates: [ {drawgame} ]\n\n"
                  + "            0       1       2\n"
                  + "\t _______________________\n"
@@ -244,6 +244,10 @@ namespace JogoDaVelha
                         y++;
                     }
                 }
+                if (x == 3 || y == 3)
+                {
+                    break;
+                }
 
             }
 
@@ -282,6 +286,10 @@ namespace JogoDaVelha
                     {
                         y++;
                     }
+                }
+                if(x == 3 || y == 3)
+                {
+                    break;
                 }
             }
 
