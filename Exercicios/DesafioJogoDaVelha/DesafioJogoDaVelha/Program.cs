@@ -87,6 +87,7 @@ namespace JogoDaVelha
                 if (player % 2 == 0)
                 {
                     player1Victory++;
+<<<<<<< Updated upstream
 
                 }
                 else
@@ -94,6 +95,14 @@ namespace JogoDaVelha
                     Console.WriteLine();
                 }
 
+=======
+                    
+                }
+                else {
+                    Console.WriteLine();
+                }
+
+>>>>>>> Stashed changes
             }
         }
 
@@ -133,6 +142,7 @@ namespace JogoDaVelha
 
         }
 
+<<<<<<< Updated upstream
         public static bool Vencedor()
         {
             int x = 0;
@@ -198,3 +208,68 @@ namespace JogoDaVelha
         }
     }
 }
+=======
+        public static bool Ganhador()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                x = 0;
+                y = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    if (tabuleiro[i, j] == 'X')
+                    {
+                        x++;
+                    }
+                    else if (tabuleiro[i, j] == 'O')
+                    {
+                        y++;
+                    }
+                }
+            }
+        }
+            //verificando as linhas verticas
+
+            for (int i = 0; i < 3; i++)
+            {
+                x = 0;
+                o = 0;
+                for (int j = 0; j < 3; j++)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        x++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        o++;
+                    }
+                }
+            }
+
+            //verificando a diagonal principal
+
+            x = 0;
+            o = 0;
+            for (int i = 0; i < 3; i++)
+            {
+
+                if (tabuleiro[i, i] == 'X')
+                {
+                    x++;
+                }
+                else if (tabuleiro[i, i] == '0')
+                {
+                    y++;
+
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+>>>>>>> Stashed changes
