@@ -18,14 +18,15 @@ namespace JogoDaVelha
         static int line, column; // Armaze a escolha do jogador
 
         static int flag = 0; // Variável para indicar o status do jogo (0 para jogo em andamento, 1 para vitória de um jogador, 2  para empate)
-
+        static DateTime temp = DateTime.Now;
+        static string t1 = temp.ToLongTimeString();
         static void Main(string[] args)
         {
             Console.WriteLine(Tabuleiro());
 
             do
             {
-                
+
                 bool jogada = false;
 
                 if (player % 2 != 0)
@@ -58,9 +59,10 @@ namespace JogoDaVelha
                 {
                     while (jogada == false)
                     {
-                        Console.WriteLine($"\tJogador da vez: Player 2 'O' \n");         
+                        Console.WriteLine($"\tJogador da vez: Player 2 'O' \n");
                         Console.Write("\tInforme a linha desejada: ");
                         line = int.Parse(Console.ReadLine());
+
                         Console.Write("\tInforme a coluna desejada: ");
                         column = int.Parse(Console.ReadLine());
 
@@ -79,14 +81,11 @@ namespace JogoDaVelha
 
                 }
 
-
                 flag = Winner();
                 player++;
 
                 Console.Clear();
                 Console.WriteLine(Tabuleiro());
-
-
 
                 if (flag == 1)
                 {
@@ -101,7 +100,6 @@ namespace JogoDaVelha
                             ResetGame();
 
                         }
-
 
                     }
                     else
@@ -122,7 +120,7 @@ namespace JogoDaVelha
 
                     drawgame++;
 
-                    Console.WriteLine("\n\t    Empate!");
+                    Console.WriteLine("\n\t      Empate!");
                     Console.Write("\n Deseja jogar novamente? (digite 0 para continuar ou aperte qualquer outra tecla para encerrar): ");
                     int x = int.Parse(Console.ReadLine());
                     if (x == 0)
@@ -200,7 +198,7 @@ namespace JogoDaVelha
             {
                 x = 1;
             }
-            else if (LinhasVerticas())
+            else if (LinhaVertical())
             {
                 x = 1;
             }
@@ -264,7 +262,7 @@ namespace JogoDaVelha
 
         }
 
-        public static bool LinhasVerticas() //Verifica as linhas verticais
+        public static bool LinhaVertical() //Verifica as linhas verticais
         {
             int x = 0;
             int y = 0;
