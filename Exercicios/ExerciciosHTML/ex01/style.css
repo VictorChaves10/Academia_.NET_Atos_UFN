@@ -1,0 +1,152 @@
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+    
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 46px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+        }
+
+        main a {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+
+        }
+
+        main a:hover {
+            color: rgb(255, 32, 32);
+        }
+
+        main ul {
+            list-style: none;
+            margin: auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            text-align: center;
+        ;
+        }
+
+        #logo-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding-top: 50px;
+
+        }
+       
+ 
+        li{
+            display: inline;
+            margin: 20px;
+        }
+
+        #parceiros-img {
+            
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #parceiros-img img{
+            width: 100px;
+            margin: 20px;
+            
+        }
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-color: rgb(43, 41, 41);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 40px;
+
+            width: 600px;
+            height: 500px;
+            margin: auto;
+
+
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            
+        }
+        form h1{
+            font-size: 25px;
+        }
+        form div{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+
+        }
+        label {
+            margin: 5px;
+        }
+        form .text{
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 350px;
+        }
+
+        form button{
+            padding: 10px;
+            width: 110px;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover{
+            
+            background-color: rgb(255, 0, 0);
+        }
+
+        #env:hover{
+            background-color: green;
+        }
+
+        #genero{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #genero input{
+           margin:10px;
+        }

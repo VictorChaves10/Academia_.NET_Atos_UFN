@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Air Jordan</title>
+</head>
+
+<body>
+
+    <!--Cabeçario-->
+
+    <header>
+        <img src="imagens/Jumpman_logo.svg" alt="Jump Man" height="90px" width="90px">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Galeria</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Carrousel-->
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="imagens/Carrousel-1.svg" width="100%" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagens/Carrousel-2.svg" width="100%" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagens/Carrousel-3.svg" width="100%" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!--Introdução ao produto-->
+
+        <section class="introducao-produto" id="introducao-1">
+
+            <article id="introducao-text">
+                <h1>Tênis inspirado no maior<br> jogador de basquete de todos<br> os tempos e que conquistou o<br> publico ao redor  mundo.</h1>
+                <button class="veja-sobre">Veja sobre</button>
+            </article>
+
+            <aside>
+                <img src="imagens/Michael-Jordan.svg" width="500px" alt="">
+                <a href="https://pt.wikipedia.org/wiki/Michael_Jordan" target="_blank">
+                    <p>Michael Jordan</p>
+                </a>
+            </aside>
+
+        </section>
+
+
+        <!--História dos produtos apresentados-->
+
+        <section class="introducao-produto">
+            <article class="description-snkrs" id="jordan-mid">
+
+                <p>O tênis Air Jordan 1 Mid é inspirado no primeiro AJ1, oferecendo aos fãs OG uma visão da evolução da
+                    marca Jordan desde 1985. Detalhes elaborados, como a etiqueta e a etiqueta retrô em preto e
+                    vermelho.</p>
+                <img src="imagens/jordan-mid.svg" alt="">
+
+            </article>
+
+            <article class="description-snkrs" id="true-blue">
+
+                <p>Comemorando os 35 anos do Air Jordan 3, esses tênis combinam a silhueta clássica do AJ1 com uma
+                    colorway original do AJ3. Feito de acordo com as especificações de 1985, ele tem couro premium, gola
+                    alta e a etiqueta na língua que você conhece e adora.</p>
+                <img src="imagens/true-blue.svg" alt="">
+
+            </article>
+
+            <article class="description-snkrs" id="reverse-laney">
+
+                <p>Inspirada nos tempos de colégio de MJ, esta versão colorida traz a energia A+ para as ruas. Explosões
+                    ousadas de Game Royal e Varsity Maize permitem que você se junte à equipe com estilo, enquanto o
+                    couro sutilmente envelhecido aumenta o apelo vintage. </p>
+                <img src="imagens/reverse-laney.svg" alt="">
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Victor Chaves</p>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

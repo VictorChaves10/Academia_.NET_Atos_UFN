@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Kanit:wght@400;500&family=Roboto&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Menu cabeçalho*/
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 10px;
+
+
+    background-color: rgba(128, 128, 128, 0.158);
+}
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px 40px;
+    font: normal 400 16px 'Kanit', sans-serif;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu a:hover {
+    color: rgba(55, 55, 55, 0.242);
+}
+
+/*Configuração do carrousel*/
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: black;
+}
+
+/*Configuração padrão para as section*/
+
+main .introducao-produto {
+
+    display: flex;
+    height: 800px;
+    padding: 20px;
+    margin: 30px 0px;
+}
+
+/*Primeira section falando sobre a inspiração do produto*/
+
+#introducao-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/*Article com um texto introdutivo e um botão que direciona para ver mais*/
+
+#introducao-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+
+}
+
+#introducao-text h1 {
+    font: normal 35px 'Bowlby One SC', cursive;
+    text-align: center;
+
+}
+
+.veja-sobre{
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: #BD0000;
+    font: normal 16px 'Bowlby One SC', cursive;
+    color: #fff;;
+}
+
+.veja-sobre:hover{
+ 
+    background-color: #ff2d2d;
+ 
+}
+
+#introducao-1 aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#introducao-1 a 
+{
+    font: normal 16px '';
+    font: normal bold 16px sans-serif;
+    color: black;
+}
+
+
+
+.description-snkrs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 25%;
+    margin: auto;
+
+}
+
+.description-snkrs p {
+    margin: 50px 20px;
+    color: #FFFF;
+    font: normal 20px Sans-serif;
+}
+
+#jordan-mid {
+    background-color: #BD0000;
+}
+
+#true-blue {
+    background-color: #006EFF;
+}
+
+#reverse-laney {
+    background-color: #FFDA2C;
+}
+
+footer {
+
+    margin-top: 10px;
+    padding: 20px;
+    height: 80px;
+    background-color: black;
+    color: #FFFF;
+
+    text-align: center;
+}
