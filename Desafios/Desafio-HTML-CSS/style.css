@@ -61,11 +61,13 @@ main .introducao-produto {
 
 #introducao-1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #e0e0e094;
 }
 
-/*Article com um texto introdutivo e um botão que direciona para ver mais*/
+/*Article com texto introdutivo e um botão que direciona para a pagina sobre*/
 
 #introducao-text {
     display: flex;
@@ -76,8 +78,8 @@ main .introducao-produto {
 
 }
 
-#introducao-text h1 {
-    font: normal 35px 'Bowlby One SC', cursive;
+#introducao-1 h1 {
+    font: normal 30px 'Bowlby One SC', cursive;
     text-align: center;
 
 }
@@ -89,7 +91,8 @@ main .introducao-produto {
     border: 1px solid red;
     background-color: #BD0000;
     font: normal 16px 'Bowlby One SC', cursive;
-    color: #fff;;
+    color: #fff;
+    cursor: pointer;
 }
 
 .veja-sobre:hover{
@@ -97,6 +100,7 @@ main .introducao-produto {
     background-color: #ff2d2d;
  
 }
+
 
 #introducao-1 aside {
     height: 100%;
@@ -108,12 +112,17 @@ main .introducao-produto {
 
 #introducao-1 a 
 {
-    font: normal 16px '';
     font: normal bold 16px sans-serif;
     color: black;
 }
 
+#introducao-1 a:hover
+{
+    color: rgba(58, 57, 57, 0.514);
+}
 
+
+/*Segunda introdução do produto*/
 
 .description-snkrs {
     display: flex;
