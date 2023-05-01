@@ -55,6 +55,8 @@ main .introducao-produto {
     height: 800px;
     padding: 20px;
     margin: 30px 0px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*Primeira section falando sobre a inspiração do produto*/
@@ -64,33 +66,51 @@ main .introducao-produto {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #e0e0e094;
+    flex-wrap: wrap;
+    background-color: #efefef95;
 }
 
 /*Article com texto introdutivo e um botão que direciona para a pagina sobre*/
 
 #introducao-text {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: 100%;
+    height: 500px;
+    width: 100%;
+    
 
 }
 
-#introducao-1 h1 {
-    font: normal 30px 'Bowlby One SC', cursive;
+#introducao-text div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
+    width: 550px;
+    height: 100%;
+}
 
+#introducao-1 h1 {
+    font: normal 40px 'Bowlby One SC', sans-serif;
+    text-align: center;
+    color:#BD0000;
+}
+
+#introducao-1 h2 {
+    font: normal 25px 'Bowlby One SC', sans-serif;
+    text-align: center;
 }
 
 .veja-sobre{
     padding: 5px;
-    width: 120px;
-    height: 50px;
+    width: 110px;
+    height: 45px;
     border: 1px solid red;
     background-color: #BD0000;
-    font: normal 16px 'Bowlby One SC', cursive;
+    font: normal 14px 'Bowlby One SC', cursive;
     color: #fff;
     cursor: pointer;
 }
@@ -104,6 +124,7 @@ main .introducao-produto {
 
 #introducao-1 aside {
     height: 100%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,20 +145,30 @@ main .introducao-produto {
 
 /*Segunda introdução do produto*/
 
+
 .description-snkrs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 600px;
-    width: 25%;
-    margin: auto;
+    height: 80%;
+    padding: 20px;
+    width: 350px;
+    margin: 10px;
 
 }
 
+
+.description-snkrs img {
+
+    width: 100%;
+}
+
+
 .description-snkrs p {
-    margin: 50px 20px;
+    margin: 30px 0px;
     color: #FFFF;
+    height: 50px;
     font: normal 20px Sans-serif;
 }
 
