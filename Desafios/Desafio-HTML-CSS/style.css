@@ -6,6 +6,10 @@
     margin: 0px;
 }
 
+body {
+    background-color: #efefef95;
+}
+
 /*Menu cabeçalho*/
 
 header {
@@ -14,8 +18,6 @@ header {
     justify-content: space-around;
     height: 100px;
     margin-bottom: 10px;
-
-
     background-color: rgba(128, 128, 128, 0.158);
 }
 
@@ -54,7 +56,7 @@ main .introducao-produto {
     display: flex;
     height: 800px;
     padding: 20px;
-    margin: 30px 0px;
+    margin: 20px 0px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -79,11 +81,11 @@ main .introducao-produto {
     align-items: center;
     height: 500px;
     width: 100%;
-    
+
 
 }
 
-#introducao-text div{
+#introducao-text div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +98,7 @@ main .introducao-produto {
 #introducao-1 h1 {
     font: normal 40px 'Bowlby One SC', sans-serif;
     text-align: center;
-    color:#BD0000;
+    color: #BD0000;
 }
 
 #introducao-1 h2 {
@@ -104,7 +106,7 @@ main .introducao-produto {
     text-align: center;
 }
 
-.veja-sobre{
+.veja-sobre {
     padding: 5px;
     width: 110px;
     height: 45px;
@@ -113,12 +115,13 @@ main .introducao-produto {
     font: normal 14px 'Bowlby One SC', cursive;
     color: #fff;
     cursor: pointer;
+    margin: 20px;
 }
 
-.veja-sobre:hover{
- 
+.veja-sobre:hover {
+
     background-color: #ff2d2d;
- 
+
 }
 
 
@@ -131,14 +134,12 @@ main .introducao-produto {
     justify-content: center;
 }
 
-#introducao-1 a 
-{
+#introducao-1 a {
     font: normal bold 16px sans-serif;
     color: black;
 }
 
-#introducao-1 a:hover
-{
+#introducao-1 a:hover {
     color: rgba(58, 57, 57, 0.514);
 }
 
@@ -146,30 +147,61 @@ main .introducao-produto {
 /*Segunda introdução do produto*/
 
 
+#section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-image: url(imagens/background-section2.jpg);
+    background-size: cover;
+
+}
+
+#section-2 h1 {
+    font: normal 40px 'Bowlby One SC', sans-serif;
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+#section-jordans {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 0px;
+}
+
+
 .description-snkrs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 80%;
     padding: 20px;
-    width: 350px;
+    width: 250px;
+    height: 90%;
     margin: 10px;
 
 }
 
 
 .description-snkrs img {
-
     width: 100%;
 }
 
 
 .description-snkrs p {
     margin: 30px 0px;
-    color: #FFFF;
+    color: #fffdfd;
     height: 50px;
-    font: normal 20px Sans-serif;
+    font: normal 400 16px 'Kanit', sans-serif;
 }
 
 #jordan-mid {
@@ -181,16 +213,52 @@ main .introducao-produto {
 }
 
 #reverse-laney {
-    background-color: #FFDA2C;
+    background-color: #e8bf00;
 }
 
 footer {
 
-    margin-top: 10px;
     padding: 20px;
-    height: 80px;
+    height: 100px;
     background-color: black;
     color: #FFFF;
 
     text-align: center;
+}
+
+
+
+/*Página sobre*/
+
+
+
+
+#sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+
+#sobre div {
+    padding: 10px;
+}
+
+#sobre-criacao {
+    width: 650px;
+}
+
+#sobre-criacao h2 {
+    text-align: center;
+    font: normal 35px 'Bowlby One SC', sans-serif;
+}
+
+#sobre p {
+
+    font: normal 400 23px 'Kanit', sans-serif;
+    padding: 10px;
+
 }
