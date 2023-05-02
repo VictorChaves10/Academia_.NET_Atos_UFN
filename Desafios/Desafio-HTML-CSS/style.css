@@ -222,16 +222,11 @@ footer {
     height: 100px;
     background-color: black;
     color: #FFFF;
-
     text-align: center;
 }
 
 
-
 /*Página sobre*/
-
-
-
 
 #sobre {
     display: flex;
@@ -249,6 +244,7 @@ footer {
 
 #sobre-criacao {
     width: 650px;
+    text-align: center;
 }
 
 #sobre-criacao h2 {
@@ -261,4 +257,14 @@ footer {
     font: normal 400 23px 'Kanit', sans-serif;
     padding: 10px;
 
+}
+
+
+/*GALERIA*/
+
+
+#galeria{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
