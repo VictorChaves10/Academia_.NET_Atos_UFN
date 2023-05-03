@@ -95,7 +95,7 @@ main .introducao-produto {
     height: 100%;
 }
 
-#introducao-1 h1 {
+.titulo-paginas {
     font: normal 40px 'Bowlby One SC', sans-serif;
     text-align: center;
     color: #BD0000;
@@ -228,7 +228,8 @@ footer {
 
 /*Página sobre*/
 
-#sobre {
+
+.sobre {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -238,33 +239,134 @@ footer {
 }
 
 
-#sobre div {
+.sobre div {
     padding: 10px;
 }
 
-#sobre-criacao {
+#sobre-text {
     width: 650px;
     text-align: center;
 }
 
-#sobre-criacao h2 {
+#sobre-text h2 {
     text-align: center;
     font: normal 35px 'Bowlby One SC', sans-serif;
 }
 
-#sobre p {
+#sobre-text p {
 
     font: normal 400 23px 'Kanit', sans-serif;
     padding: 10px;
 
 }
 
+#sobre-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+table {
+    width: 80%;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.219);
+    margin: auto;
+}
+
+caption {
+    padding: 50px;
+    font: normal 35px 'Bowlby One SC', sans-serif;
+}
+
+th {
+    font: normal 20px 'Bowlby One SC', sans-serif;
+    color: #ff0000;
+    padding: 20px;
+}
+
+td {
+    font: normal 18px 'Bowlby One SC', sans-serif;
+    color: rgb(0, 0, 0);
+
+    border: 3px solid rgba(0, 0, 0, 0.721);
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+}
+
+
 
 /*GALERIA*/
 
 
-#galeria{
+#galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+
+#imagens {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 200px;
 }
+
+#imagens div {
+    width: 200px;
+    height: 250px;
+}
+
+#imagens img {
+    width: 100%;
+}
+
+/*Contato*/
+
+#contato{
+    height: 100vh;
+    width: 600px;
+    margin: auto; 
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    font: normal 400 23px 'Kanit', sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    background-color: rgb(193, 193, 193);
+    padding: 50px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 190px;
+    margin-top: 5px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+.texto{
+    width: 350px;
+    height: 25px;
+    padding: 3px;
+    margin: 15px;
+}
+
+
