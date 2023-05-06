@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        li {
+            margin: 20px;
+        }
+
+    </style>
+
+
+    <script>
+        function mudarCor(cor){
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <ul>
+        <li>Vermelho <input type="radio" name="cores" onclick="mudarCor('red')"></li>
+        <li>Verde <input type="radio" name="cores" onclick="mudarCor('green')"></li>
+        <li>Azul <input type="radio" name="cores" onclick="mudarCor('blue')"></li>
+        <li>Amarelo<input type="radio" name="cores" onclick="mudarCor('yellow')"></li>
+    </ul>
+
+
+
+</body>
+
+</html>

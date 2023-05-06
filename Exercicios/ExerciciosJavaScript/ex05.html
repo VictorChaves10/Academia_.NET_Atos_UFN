@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+    <style>
+        body {
+            display: flex;
+
+        }
+
+        form {
+            margin: auto;
+            margin-top: 150px;
+            font-size: 19px;
+
+        }
+    </style>
+
+    <script>
+
+        function ativarBotao()
+        { 
+            var checaropcao = document.getElementsByName("acompanhamentos");
+            var duasOpcoes = 0;
+
+            for(var i = 0; i < checaropcao.length; i++){
+
+                if(checaropcao[i] == checked){
+                    duasOpcoes++;
+                }
+            }
+
+            if(duasOpcoes >= 2){
+                document.getElementById("Enviar").disabled = false
+            }
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form action="">
+
+        <p>*Escolha ao menos 2 opções:</p>
+        <p>Acompanhamentos:</p>
+
+        <p>Batata Frita<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
+        <p>Onion-rings<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
+        <p>Salada<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
+        <p>Maionese<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
+
+        <button id="enviar" type="button" disabled>Enviar</button>
+    </form>
+</body>
+
+</html>
