@@ -33,7 +33,7 @@ namespace ConsoleApp1
 
         public int Peso
         {
-            get { return _pesoKg}
+            get { return _pesoKg; }
             set
             {
                 if (value != 0)
@@ -194,7 +194,7 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return $"//DADOS DA TRIAGEM//\n\n*Medidadas corporais*\n\n Altura:{_altura.ToString("F2")}\tPeso: {_pesoKg}kg\n\n*Dados Vitais* \n\nPressão Arterial: {Pressao()}, {_pressaoSistolica}/{_pressaoDiastolica}\t\tTemperatura: {Febre()}, {_temperatura.ToString("F2")}\n\nPrioridade de Atendimento: {NivelUrgência()}\tLocal de Atendimento: \n\n\n";
+            return $"//DADOS DA TRIAGEM//\n\n*Medidadas corporais*\n\n Altura:{_altura.ToString("F2")}\t\tPeso: {_pesoKg}kg\n\n*Dados Vitais* \n\nPressão Arterial: {Pressao()}, {_pressaoSistolica}/{_pressaoDiastolica}\t\tTemperatura: {Febre()}, {_temperatura.ToString("F2")}\n\nPrioridade de Atendimento: {NivelUrgência()}\tLocal de Atendimento: \n\n\n";
         }
 
 
