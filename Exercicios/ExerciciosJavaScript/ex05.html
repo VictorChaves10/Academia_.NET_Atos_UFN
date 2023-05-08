@@ -20,28 +20,6 @@
         }
     </style>
 
-    <script>
-
-        function ativarBotao()
-        { 
-            var checaropcao = document.getElementsByName("acompanhamentos");
-            var duasOpcoes = 0;
-
-            for(var i = 0; i < checaropcao.length; i++){
-
-                if(checaropcao[i] == checked){
-                    duasOpcoes++;
-                }
-            }
-
-            if(duasOpcoes >= 2){
-                document.getElementById("Enviar").disabled = false
-            }
-
-        }
-
-
-    </script>
 </head>
 
 <body>
@@ -50,13 +28,46 @@
         <p>*Escolha ao menos 2 opções:</p>
         <p>Acompanhamentos:</p>
 
-        <p>Batata Frita<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
-        <p>Onion-rings<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
-        <p>Salada<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
-        <p>Maionese<input onclick="ativarBotao" type="checkbox" name="acompanhamentos"></p>
+        <p>Batata Frita<input onchange="ativarBotao()" type="checkbox" name="item1"></p>
+        <p>Onion-rings<input onchange="ativarBotao()" type="checkbox" name="item2"></p>
+        <p>Salada<input onchange="ativarBotao()" type="checkbox" name="item3"></p>
+        <p>Maionese<input onchange="ativarBotao()" type="checkbox" name="item4"></p>
 
-        <button id="enviar" type="button" disabled>Enviar</button>
+        <button id="enviar" type="submit" disabled >Enviar</button>
     </form>
+    
+    <script>
+
+        function ativarBotao() {
+
+            var opcoes = document.getElementsByTagName("input");
+            var duasOpcoes = 0;
+
+            for (var i = 0; i < opcoes.length; i++) {
+
+                if (opcoes[i].checked) {
+                    duasOpcoes++;
+                }
+            }
+
+
+            var buttonEnviar = document.getElementById("enviar");
+
+
+            if (duasOpcoes < 2) {
+               
+                buttonEnviar.setAttribute("disabled", "true");
+            }
+            else {
+                buttonEnviar.removeAttribute("disabled");
+            }
+
+        }
+
+
+    </script>
+      
+      
 </body>
 
 </html>
