@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06</title>
+    <style>
+        body {
+            background-color: rgba(180, 178, 178, 0.219);
+        }
+
+        #retrato {
+
+            margin: auto;
+            margin-top: 20%;
+            padding: 0px;
+            border: 10px solid #8000f8b2;
+            width: 500px;
+
+        }
+
+        #cor-fundo {
+            background-color: white;
+            width: 100%;
+        }
+
+        p {
+            padding: 10px;
+            margin: 0px;
+        }
+
+
+
+        #botao {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 0px;
+            border-top: 10px solid #8000f8b2;
+            text-align: center;
+        }
+
+        button {
+            margin: 2px 5px;
+            padding: 5px;
+        }
+
+        #size-font {
+            text-align: center;
+            border-left: 10px solid #8000f8b2;
+            border-right: 10px solid #8000f8b2;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id=retrato>
+        <div id="cor-fundo">
+            <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, cum corporis nihil est
+                necessitatibus
+                repellat
+                repellendus unde sed? Quidem numquam cum vero eum harum dolores, illum ullam eos rerum quas!</p>
+        </div>
+        <div id="botao">
+            <div id="botao1">
+                <p>Cor da fonte:</p>
+                <button type="button" name="font-color" onclick="fontColorWhite()">Branco</button>
+                <button type="button" name="font-color" onclick="fontColorBlack()">Preto</button>
+            </div>
+            <div id="size-font">
+                <p>Alterar tamanho da fonte</p>
+                <button id="aumenta">+</button>
+                <button id="diminui">-</button>
+            </div>
+            <div id="botao2">
+                <p>Cor de fundo:</p>
+                <button type="button" name="bg-color" onchange="bgColorWhite()">Branco</button>
+                <button type="button" name="bg-color" onclick="bgColorBlack()">Preto</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function fontColorWhite() {
+            var text = document.getElementById("texto");
+            text.style.color = "white";
+        }
+
+        function fontColorBlack() {
+            var text = document.getElementById("texto");
+            text.style.color = "black";
+        }
+
+        function bgColorWhite() {
+            var bgcolor = document.getElementById("cor-fundo");
+            bgcolor.style.backgroundColor = "white";
+        }
+
+        function bgColorBlack() {
+            var bgcolor = document.getElementById("cor-fundo");
+
+            bgcolor.style.backgroundColor = "black";
+        }
+
+
+
+        var aumenta = document.getElementById('aumenta');
+        var diminui = document.getElementById('diminui');
+        var text = document.getElementById('texto');
+
+        aumenta.addEventListener('click', () => {
+            var fonteAtual = parseFloat(window.getComputedStyle(text).fontSize);
+            var fonteAtualizada = fonteAtual + 2;
+            text.style.fontSize = `${fonteAtualizada}px`;
+        });
+
+        diminui.addEventListener('click', () => {
+            var fonteAtual = parseFloat(window.getComputedStyle(text).fontSize);
+            var fonteAtualizada = fonteAtual - 2;
+            text.style.fontSize = `${fonteAtualizada}px`;
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
