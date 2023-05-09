@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex07</title>
+    <title>Ex08</title>
     <style>
         body {
             background-color: rgba(180, 178, 178, 0.219);
@@ -17,13 +17,15 @@
             margin-top: 20%;
             padding: 0px;
             border: 10px solid #8000f8b2;
-            width: 500px;
+            width: 600px;
+            height: 100%;
 
         }
 
         #cor-fundo {
             background-color: white;
             width: 100%;
+            height: 100%;
         }
 
         p {
@@ -46,12 +48,17 @@
         button {
             margin: 2px 5px;
             padding: 5px;
+
         }
 
         #size-font {
             text-align: center;
             border-left: 10px solid #8000f8b2;
             border-right: 10px solid #8000f8b2;
+        }
+
+        #botao2 {
+            border-left: 10px solid #8000f8b2;
         }
     </style>
 
@@ -72,15 +79,21 @@
                 <button type="button" name="font-color" onclick="fontColorWhite()">Branco</button>
                 <button type="button" name="font-color" onclick="fontColorBlack()">Preto</button>
             </div>
+
+            <div id="botao2">
+                <p>Cor de fundo:</p>
+                <button type="button" name="bg-color" onclick="bgColorWhite()">Branco</button>
+                <button type="button" name="bg-color" onclick="bgColorBlack()">Preto</button>
+            </div>
             <div id="size-font">
-                <p>Alterar tamanho da fonte</p>
+                <p>Tamanho da fonte</p>
                 <button id="aumenta">+</button>
                 <button id="diminui">-</button>
             </div>
-            <div id="botao2">
-                <p>Cor de fundo:</p>
-                <button type="button" name="bg-color" onchange="bgColorWhite()">Branco</button>
-                <button type="button" name="bg-color" onclick="bgColorBlack()">Preto</button>
+            <div>
+                <p>Caixa da fonte</p>
+                <button id="upper" onclick="toUpperCase() ">Alta</button>
+                <button id="low" onclick="toLowerCase()">Baixa</button>
             </div>
         </div>
     </div>
@@ -107,8 +120,6 @@
             bgcolor.style.backgroundColor = "black";
         }
 
-
-
         var aumenta = document.getElementById('aumenta');
         var diminui = document.getElementById('diminui');
         var text = document.getElementById('texto');
@@ -125,6 +136,16 @@
             text.style.fontSize = `${fonteAtualizada}px`;
         });
 
+        function toUpperCase() {
+
+            var text = document.getElementById("texto");
+            text.textContent = text.textContent.toUpperCase();
+        }
+
+        function toLowerCase() {
+            var text = document.getElementById("texto");
+            text.textContent = text.textContent.toLowerCase();
+        }
 
     </script>
 
