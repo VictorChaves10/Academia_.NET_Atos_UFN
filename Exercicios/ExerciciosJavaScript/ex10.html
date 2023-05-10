@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.718);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: auto;
+            background-color: rgba(168, 166, 166, 0.293);
+            width: 450px;
+            padding: 20px;
+            font: normal 400 15px 'Helvetica';
+            color: rgba(239, 239, 247, 0.796);
+            text-align: initial;
+
+
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .opt-radio {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 15px 15px
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: first baseline;
+            margin: 4px;
+        }
+
+        input[type=radio]:checked {
+            cursor: pointer;
+            background-color: blue;
+            color: blue;
+
+        }
+
+        input:disabled {
+            cursor: not-allowed;
+ 
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date] {
+            margin-top: 5px;
+            margin-left: 20px;
+            padding: 8px;
+            border: 2px solid #0438c6c3;
+            box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.312);
+            border-radius: 6px;
+            width: 250px;
+            text-align: center;
+            background-color: rgba(255, 255, 251, 0.959);
+        }
+
+        input[type=submit] {
+            margin-top: 5px;
+            margin-left: 20px;
+            padding: 8px;
+            border: 2px solid #2aff4372;
+            box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.312);
+            border-radius: 6px;
+            width: 120px;
+            text-align: center;
+            background-color: rgba(29, 207, 29, 0.836);
+            color: #FFF;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgba(29, 207, 29, 0.641);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" autocomplete="off">
+        <h1>Formulário</h1>
+        <div>
+            <p class="opt-radio">
+                <input type="radio" name="pessoa" id="pFisica" onclick="toggleCampos()">
+                <label for="pFisica">Pessoa física</label>
+            </p>
+            <p class="opt-radio">
+                <input type="radio" name="pessoa" id="pJuridica" onclick="toggleCampos()">
+                <label for="pJuridica">Pessoa jurídica</label>
+            </p>
+        </div>
+
+        <p class="text">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+
+        <p class="text">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="11" minlength="11" disabled>
+        </p>
+
+        <p class="text">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" name="cnpj" id="cnpj" disabled>
+        </p>
+
+        <p class="text">
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input type="date" name="dataNascimento" id="dataNascimento" disabled>
+        </p>
+
+        <p class="text">
+            <label for="end">Endereço:</label>
+            <input type="text" name="end" id="end">
+        </p>
+
+        <p class="text">
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" pattern="[0-9]*">
+        </p>
+
+        <p class="text">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function toggleCampos() {
+            var pFisica = document.getElementById("pFisica");
+            var cpfInput = document.getElementById("cpf");
+            var dataNascimentoInput = document.getElementById("dataNascimento");
+            var pJuridica = document.getElementById("pJuridica");
+            var cnpjInput = document.getElementById("cnpj");
+
+            if (pFisica.checked) {
+                cpfInput.disabled = false;
+                dataNascimentoInput.disabled = false;
+                cnpjInput.disabled = true;
+            } else if (pJuridica.checked) {
+                cpfInput.disabled = true;
+                dataNascimentoInput.disabled = true;
+                cnpjInput.disabled = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
