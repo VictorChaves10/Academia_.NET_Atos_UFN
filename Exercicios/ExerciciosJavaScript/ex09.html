@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex09</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.718);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: auto;
+            background-color: rgba(168, 166, 166, 0.293);
+            width: 350px;
+            height: 450px;
+            padding: 20px;
+            font: normal 400 15px 'Helvetica';
+            color: rgba(239, 239, 247, 0.796);
+            text-align: initial;
+
+
+        }
+
+        input {
+            margin-top: 5px;
+            margin-left: 20px;
+            padding: 5px;
+            border: 2px solid #0438c6c3;
+            box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.312);
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+
+        }
+
+        #enviar {
+            width: 265px;
+            background-color: rgb(29, 207, 29);
+            cursor: pointer;
+        }
+
+        #enviar:hover {
+            background-color: rgba(29, 207, 29, 0.641);
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" onsubmit="return validarForm()" autocomplete="off">
+        <h1>Login</h1>
+        <p>Login<input id="login" type="text" name="login" required></p>
+        <p>Senha<input id="senha" type="password" name="senha" required minlength="6" maxlength="10"
+                placeholder="de 8 a 10 caracteres"></p>
+        <p>Confirmar senha<input id="confirmSenha" type="password" name="confirmSenha" required></p>
+        <input id="enviar" type="submit" value="Enviar">
+    </form>
+    <script>
+
+        function validarForm() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            var confirmaSenha = document.getElementById('confirmSenha').value;
+
+            if (login === '' || senha === '' || confirmaSenha === '') {
+                alert('Por favor, preencha todos os campos.');
+                return false;
+            }
+
+            if (senha !== confirmaSenha) {
+                alert('A senha e a confirmação de senha não coincidem.');
+                return false;
+            }
+
+            if (senha.length < 6 || senha.length > 10) {
+                alert('A senha deve ter entre 6 e 10 caracteres.');
+                return false;
+            }
+
+            return true;
+        }
+
+
+    </script>
+</body>
+
+</html>
