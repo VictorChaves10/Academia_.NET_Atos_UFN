@@ -1,0 +1,5 @@
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosHeranca\Ex01\obj\Debug\net6.0\Ex01.csproj.AssemblyReference.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosHeranca\Ex01\obj\Debug\net6.0\Ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosHeranca\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfoInputs.cache
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosHeranca\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfo.cs
+C:\Users\a867900\OneDrive - Atos\Documents\Academia_.NET_Atos_UFN\Exercicios\ExerciciosHeranca\Ex01\obj\Debug\net6.0\Ex01.csproj.CoreCompileInputs.cache
