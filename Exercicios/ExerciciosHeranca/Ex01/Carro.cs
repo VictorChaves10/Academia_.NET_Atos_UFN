@@ -10,4 +10,8 @@ namespace Ex01
     {
         public int QuantPortas { get; set; }
     }
-}
+
+    public void Dirigir()
+    {
+        Console.WriteLine("oi");
+    } 
