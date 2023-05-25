@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParkingLots.Entities
+namespace Parking.Entities
 {
     internal class ParkingSpot
     {
-        public int NumberParkingSpot { get; set; }
+        public int Id { get; set; }
         public DateTime EntryTime { get; set; }
         public Vehicle Vehicle { get; set; } = new Vehicle();
         public DateTime ExitTime { get; set; }
@@ -21,7 +21,7 @@ namespace ParkingLots.Entities
 
         public ParkingSpot(int numberParkingSpot)
         {
-            NumberParkingSpot = numberParkingSpot;    
+            Id = numberParkingSpot;
         }
         public void AddVehicle(Vehicle vehicle)
         {
@@ -75,7 +75,5 @@ namespace ParkingLots.Entities
 
             return pricePerPeriod;
         }
-
-
     }
 }

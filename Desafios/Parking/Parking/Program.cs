@@ -1,24 +1,20 @@
-﻿
-using ParkingLots.Entities;
+using Parking.Entities;
 
-
-CarParking parking = new CarParking();
-
-for(int i = 0; i < 10; i++)
+namespace Parking
 {
-   ParkingSpot parkingSpot = new ParkingSpot(i + 1);
-   parking.ParkingSpots.Add(parkingSpot);            
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Parking());
+            
+        }
+    }
 }
-
-Console.Write("Qual o tipo do veiculo?  ");
-string typeVehicle = Console.ReadLine();
-
-Console.Write("Informe a placa: ");
-string plateNumber = Console.ReadLine();
-
-Vehicle v = new Vehicle(typeVehicle, plateNumber);
-
-Console.WriteLine("Em qual vaga gostaria de adiciona-lo?");
-int n = int .Parse(Console.ReadLine());
-
-
